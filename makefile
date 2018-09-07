@@ -1,5 +1,5 @@
 init-gcm:
-	echo 'export LC_ALL="en_US.UTF-8"' >> .bashrc
+	echo 'export LC_ALL="en_US.UTF-8"' >> ~/.bashrc
 	export LC_ALL="en_US.UTF-8"
 	sudo apt-get update
 	sudo apt-get -y install htop
@@ -16,4 +16,12 @@ init-gcm:
 	git clone https://github.com/easymotion/vim-easymotion.git ~/.vim/bundle/vim-easymotion/
 	git clone git://github.com/altercation/vim-colors-solarized.git ~/.vim/bundle/vim-colors-solarized/
 	cp ~/.vim/bundle/vim-colors-solarized/colors/solarized.vim ~/.vim/colors
+
+
+init-zsh:
+	sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+	cp af-magic-ironhead.zsh-theme ~/.oh-my-zsh/themes
+	echo 'exec zsh' >> ~/.bashrc
+	sed -i -e 's/ZSH_THEME="robbyrussell"/ZSH_THEME="af-magic-ironhead"/g' ~/.zshrc
+	echo 'export LC_ALL="en_US.UTF-8"' >> ~/.zshrc
 
