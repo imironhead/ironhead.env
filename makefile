@@ -5,7 +5,7 @@ init-gcm:
 	sudo apt-get -y install htop
 	sudo apt-get -y install python3-pip
 	pip3 install virtualenv
-	mkdir -p ~/.vim/autoload ~/.vim/bundle
+	mkdir -p ~/.vim/autoload ~/.vim/bundle ~/.vim/colors
 	curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 	cp .tmux.conf ~/.tmux.conf
 	cp .vimrc ~/.vimrc
@@ -14,4 +14,6 @@ init-gcm:
 	git clone https://github.com/vim-airline/vim-airline.git ~/.vim/bundle/vim-airline/
 	git clone https://github.com/vim-airline/vim-airline-themes.git ~/.vim/bundle/vim-airline-themes/
 	git clone https://github.com/easymotion/vim-easymotion.git ~/.vim/bundle/vim-easymotion/
+	git clone git://github.com/altercation/vim-colors-solarized.git ~/.vim/bundle/vim-colors-solarized/
+	cp ~/.vim/bundle/vim-colors-solarized/colors/solarized.vim ~/.vim/colors
 
