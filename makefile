@@ -9,9 +9,9 @@ init-gcm:
 	curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 	cp .tmux.conf ~/.tmux.conf
 	cp .vimrc ~/.vimrc
-	git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/
-	git clone https://github.com/majutsushi/tagbar.git ~/.vim/bundle/
-	git clone https://github.com/vim-airline/vim-airline.git ~/.vim/bundle/
-	git clone https://github.com/vim-airline/vim-airline-themes.git ~/.vim/bundle/
-	git clone https://github.com/easymotion/vim-easymotion.git ~/.vim/bundle/
+	git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree/
+	git clone https://github.com/majutsushi/tagbar.git ~/.vim/bundle/tagbar/
+	git clone https://github.com/vim-airline/vim-airline.git ~/.vim/bundle/vim-airline/
+	git clone https://github.com/vim-airline/vim-airline-themes.git ~/.vim/bundle/vim-airline-themes/
+	git clone https://github.com/easymotion/vim-easymotion.git ~/.vim/bundle/vim-easymotion/
 
