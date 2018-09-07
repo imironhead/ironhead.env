@@ -28,8 +28,6 @@ git clone https://github.com/easymotion/vim-easymotion.git ~/.vim/bundle/vim-eas
 git clone git://github.com/altercation/vim-colors-solarized.git ~/.vim/bundle/vim-colors-solarized/
 cp ~/.vim/bundle/vim-colors-solarized/colors/solarized.vim ~/.vim/colors
 
-# bypass the script
-echo 'SHELL=zsh'
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 cp af-magic-ironhead.zsh-theme ~/.oh-my-zsh/themes
 echo 'exec zsh' >> ~/.bashrc
