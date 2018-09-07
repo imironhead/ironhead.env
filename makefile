@@ -2,6 +2,7 @@ init-gcm:
 	echo 'export LC_ALL="en_US.UTF-8"' >> ~/.bashrc
 	export LC_ALL="en_US.UTF-8"
 	sudo apt-get update
+	sudo apt-get -y install zsh
 	sudo apt-get -y install htop
 	sudo apt-get -y install python3-pip
 	pip3 install virtualenv
