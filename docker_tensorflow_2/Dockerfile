@@ -35,7 +35,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         cuda-curand-10-0 \
         cuda-cusolver-10-0 \
         cuda-cusparse-10-0 \
-        libcudnn7=7.4.1.5-1+cuda10.0 \
+        libcudnn7=7.6.2.24-1+cuda10.0 \
         libfreetype6-dev \
         libhdf5-serial-dev \
         libpng-dev \
@@ -92,7 +92,7 @@ RUN ${PIP} install \
     ruamel.yaml \
     scikit-image \
     scipy \
-    tf-nightly-gpu-2.0-preview==2.0.0.dev20190622
+    tf-nightly-gpu-2.0-preview
 
 RUN useradd -ms /bin/bash ironhead
 USER ironhead
